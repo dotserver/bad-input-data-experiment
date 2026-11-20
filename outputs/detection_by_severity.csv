@@ -1,0 +1,13 @@
+,caught_by_basic,caught_by_basic,caught_by_basic,caught_by_psi,caught_by_psi,caught_by_psi,caught_by_consistency,caught_by_consistency,caught_by_consistency,caught_by_prediction_drift,caught_by_prediction_drift,caught_by_prediction_drift
+severity,0.05,0.2,0.5,0.05,0.2,0.5,0.05,0.2,0.5,0.05,0.2,0.5
+corruption,,,,,,,,,,,,
+Bill months swapped: BILL_AMT1/BILL_AMT2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Frozen at training median: LIMIT_BAL,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0
+Limit sent in thousands: LIMIT_BAL,1.0,1.0,1.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+Missing at the high end: LIMIT_BAL,1.0,1.0,1.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,1.0
+Missing payments filled with 0: PAY_AMT1,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0
+Random missing: AGE,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Sex codes swapped: SEX,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0
+Small noise (10% of SD): BILL_AMT1,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0
+Stale bill: BILL_AMT1 = BILL_AMT2,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,1.0,0.0,0.0,0.0
+Stale repayment status: PAY_0 = PAY_2,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0

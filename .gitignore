@@ -1,0 +1,7 @@
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
+# Local copy of the dataset, if you use DATA_SOURCE = "file"
+default of credit card clients.xls

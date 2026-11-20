@@ -1,0 +1,21 @@
+corruption,model,auc_drop,flip_rate_corrupted,caught_by_basic,caught_by_psi,caught_by_consistency,caught_by_prediction_drift,detection
+Stale repayment status: PAY_0 = PAY_2,gradient_boosting,0.006157678163520641,0.3594601486409979,0.0,0.0,1.0,0.0,Caught only by new checks
+Limit sent in thousands: LIMIT_BAL,gradient_boosting,0.0041940408253175465,0.013055555555555556,1.0,0.0,0.0,0.0,Caught by basic checks
+Frozen at training median: LIMIT_BAL,gradient_boosting,0.0026410293030005748,0.004895705599779284,0.0,1.0,0.0,0.0,Caught only by distribution check
+Small noise (10% of SD): BILL_AMT1,gradient_boosting,0.0007110646790568608,0.004388888888888888,0.0,0.0,1.0,0.0,Caught only by new checks
+Stale bill: BILL_AMT1 = BILL_AMT2,gradient_boosting,0.0007615415037521168,0.0038621602743280172,0.0,0.0,1.0,0.0,Caught only by new checks
+Missing payments filled with 0: PAY_AMT1,gradient_boosting,0.0007820324861792183,0.0033252431937171034,0.0,0.0,1.0,0.0,Caught only by new checks
+Bill months swapped: BILL_AMT1/BILL_AMT2,gradient_boosting,0.0002762215961267689,0.003233076130920203,0.0,0.0,0.0,0.0,Missed by all checks
+Random missing: AGE,gradient_boosting,0.00014336880063580136,0.002277777777777778,1.0,0.0,0.0,0.0,Caught by basic checks
+Sex codes swapped: SEX,gradient_boosting,0.00026619287435487583,0.0015,0.0,0.0,0.0,0.0,Missed by all checks
+Missing at the high end: LIMIT_BAL,gradient_boosting,0.0030028479563370958,0.0005555555555555556,1.0,1.0,0.0,0.0,Caught by basic checks
+Stale repayment status: PAY_0 = PAY_2,logistic_regression,0.009980380394898703,0.27438222853145666,0.0,0.0,1.0,0.0,Caught only by new checks
+Sex codes swapped: SEX,logistic_regression,0.0008283100747485727,0.013722222222222222,0.0,0.0,0.0,0.0,Missed by all checks
+Limit sent in thousands: LIMIT_BAL,logistic_regression,0.0011128835645695778,0.010333333333333333,1.0,0.0,0.0,0.0,Caught by basic checks
+Frozen at training median: LIMIT_BAL,logistic_regression,0.0009337209338155072,0.007968078133454907,0.0,1.0,0.0,0.0,Caught only by distribution check
+Missing at the high end: LIMIT_BAL,logistic_regression,0.0013523905083219212,0.005,1.0,1.0,0.0,0.0,Caught by basic checks
+Random missing: AGE,logistic_regression,0.0001557766118169268,0.0045,1.0,0.0,0.0,0.0,Caught by basic checks
+Missing payments filled with 0: PAY_AMT1,logistic_regression,0.000608710089968989,0.003249582903589824,0.0,0.0,1.0,0.0,Caught only by new checks
+Small noise (10% of SD): BILL_AMT1,logistic_regression,6.888610388923188e-05,0.0024444444444444444,0.0,0.0,1.0,0.0,Caught only by new checks
+Stale bill: BILL_AMT1 = BILL_AMT2,logistic_regression,0.00013681197289642233,0.002388087493453654,0.0,0.0,1.0,0.0,Caught only by new checks
+Bill months swapped: BILL_AMT1/BILL_AMT2,logistic_regression,0.0002007535837363017,0.0017693260725056969,0.0,0.0,0.0,0.0,Missed by all checks
